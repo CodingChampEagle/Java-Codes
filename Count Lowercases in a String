@@ -1,0 +1,19 @@
+public class JavaBasics{
+
+    public static int countLowercases(String str){
+
+        int count = 0;
+        for(int i=0; i<str.length(); i++){
+            char ch = Character.toUpperCase(str.charAt(i));
+            if(ch != str.charAt(i)){
+                count++;
+            }
+        }
+        return count;
+    }
+    public static void main(String args[]){
+
+        String str = "AbcdEFGHij";
+        System.out.println(countLowercases(str));
+    }
+}
